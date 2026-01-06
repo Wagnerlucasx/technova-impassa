@@ -1,55 +1,76 @@
 <!DOCTYPE html>
 <html lang="pt">
 <head>
-    <meta charset="UTF-8">
-    <title>HardTech- Início</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<title>IMPASSA • Turma da Pesada</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<!-- Objeto 3D flutuante -->
-<div id="floating-object"></div>
-
 <header>
-    <h1>HardTech - IMPASSA</h1>
-    <p>INSTITUTO MÉDICO POLITÉCNICO DE ADMINISTRAÇÃO E SERVIÇO SANTOS AGOSTINHO</p>
-    <nav>
-        <a href="index.html">Início</a>
-        <a href="sobre.html">Sobre</a>
-        <a href="servicos.html">Serviços</a>
-        <a href="contato.html">Contato</a>
-        <a href="integrantes.html">Integrantes</a>
-    </nav>
-    <button id="theme-toggle">🌙 Dark Mode</button>
+  <h1>IMPASSA • Turma da Pesada</h1>
+  <button id="mode">🌙</button>
 </header>
 
-<section class="hero reveal">
-    <h2>Bem-vindo à Sala de Informática Técnica</h2>
-    <p>Um espaço dedicado à 11ª classe para aprender,abusar,inovar e crescer.</p>
-    <p>Nossa turma, apelidada de <strong>“HardTech”</strong>, é cheia de energia e união.</p>
-    <button onclick="mensagem()">Clique aqui</button>
-</section>
+<canvas id="bg"></canvas>
 
-<section class="reveal">
-    <h2>Aprendendo e Crescendo Juntos</h2>
-    <p>A informática conecta-nos e ajuda-nos a resolver problemas em grupo.</p>
-    <p>O trabalho colaborativo entre colegas fortalece a união e o conhecimento.</p>
-    <p>Desenvolvemos habilidades técnicas e sociais simultaneamente.</p>
-    <p>Projetos em grupo e programação juntos aumentam a criatividade.</p>
-</section>
+<main>
+  <section class="card">
+    <h2>Instituição</h2>
+    <p>INSTITUTO MÉDIO POLITÉCNICO DE ADMINISTRAÇÃO E SERVIÇOS SANTO AGOSTINHO (IMPASSA)</p>
+    <p>Representa a Sala de Informática da 11ª classe, local de aprendizado tecnológico e união entre colegas.</p>
+  </section>
 
-<section class="reveal">
-    <h2>Mais Sobre a Turma</h2>
-    <p>Na nossa turma da 11ª classe, todos aprendem a importância da união e do respeito entre colegas.</p>
-    <p>Cada projeto de informática é uma oportunidade de mostrar talento e criatividade.</p>
-    <p>Juntos, somos a <strong>HardTech</strong>, sempre conectados e motivados a crescer.</p>
-    <p>O conhecimento técnico e a amizade caminham lado a lado na nossa sala.</p>
-</section>
+  <section class="card">
+    <h2>Informática</h2>
+    <p>A informática é a base da tecnologia moderna, integrando programação, redes, segurança e desenvolvimento web.</p>
+    <p>Seu estudo é essencial para o futuro profissional e o crescimento acadêmico dos estudantes.</p>
+  </section>
 
-<footer>
-    <p>© 2026 HardTech - INSTITUTO MÉDICO POLITÉCNICO DE ADMINISTRAÇÃO E SERVIÇOS SANTOS AGOSTINHO (IMPASSA)</p>
-</footer>
+  <section class="card">
+    <h2>Desenvolvimento Web</h2>
+    <p>Utilizamos HTML, CSS e JavaScript para criar interfaces modernas, responsivas e interativas.</p>
+    <p>As animações, o design e o conteúdo educativo tornam o aprendizado mais dinâmico.</p>
+  </section>
+
+  <section class="card">
+    <h2>Turma da Pesada</h2>
+    <p>Somos unidos, colaborativos e focados no aprendizado tecnológico.</p>
+    <p>Trabalhar em equipe fortalece habilidades, motivação e espírito de união.</p>
+  </section>
+
+  <section class="card">
+    <h2>Lista de Imigrantes / Colegas</h2>
+    <ul>
+      <li>Cenilson Joaquim</li>
+      <li>Gelson Francisco</li>
+      <li>João Vissoca (Ti Lâmina)</li>
+      <li>Ladislau Amaral</li>
+      <li>Suzana Cabanga</li>
+      <li>João Catunda (P.Diddy)</li>
+      <li>Layne Afonso</li>
+      <li>Moisés Gonçalves (Ti Moi)</li>
+      <li>Pedro Neto</li>
+      <li>Obede Manzambe</li>
+      <li>Justina Dala</li>
+      <li>Leonardo Suekela</li>
+      <li>Jorge Celela (MK)</li>
+      <li>Valdimiro Da Costa</li>
+      <li>Victor Gabriel (Sombra)</li>
+      <li>Wagner Lucas (Mafioso)</li>
+      <li>Weza Fernades</li>
+    </ul>
+  </section>
+
+  <section class="card">
+    <h2>Futuro da Tecnologia</h2>
+    <p>O futuro da informática envolve inteligência artificial, computação em nuvem, automação e segurança digital.</p>
+    <p>Dominar a tecnologia hoje é liderar o mundo amanhã.</p>
+  </section>
+</main>
+
+<div class="dino"></div>
 
 <script src="script.js"></script>
 </body>
