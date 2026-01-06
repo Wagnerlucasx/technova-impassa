@@ -1,0 +1,117 @@
+
+:root {
+    --bg-color: #f4f4f4;
+    --text-color: #333;
+    --header-bg: #111;
+    --footer-bg: #111;
+    --button-bg: #000;
+    --button-text: #fff;
+    --link-hover: #00c3ff;
+    --card-bg: #eee;
+}
+
+body.dark-mode {
+    --bg-color: #111;
+    --text-color: #f4f4f4;
+    --header-bg: #222;
+    --footer-bg: #222;
+    --button-bg: #00c3ff;
+    --button-text: #111;
+    --link-hover: #00ffea;
+    --card-bg: #333;
+}
+
+body {
+    background: linear-gradient(-45deg, #00c3ff, #005bea, #ff00c8, #ff7a00);
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;
+    color: var(--text-color);
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    transition: background 0.5s, color 0.5s;
+}
+
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+header {
+    background: var(--header-bg);
+    color: var(--text-color);
+    padding: 20px;
+}
+
+nav a {
+    color: var(--text-color);
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: bold;
+    position: relative;
+}
+
+nav a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: var(--link-hover);
+    left: 0;
+    bottom: -6px;
+    transition: 0.4s;
+}
+
+nav a:hover::after { width: 100%; }
+
+button {
+    background: var(--button-bg);
+    color: var(--button-text);
+    border: none;
+    padding: 12px 25px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s, background 0.5s, color 0.5s;
+}
+
+button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+}
+
+section {
+    padding: 40px;
+}
+
+.card {
+    background: var(--card-bg);
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 300px;
+    border-radius: 10px;
+    transition: transform 0.4s, background 0.4s;
+}
+
+.card:hover { transform: translateY(-12px); background: #ddd; }
+
+footer {
+    background: var(--footer-bg);
+    color: var(--text-color);
+    padding: 15px;
+    margin-top: 40px;
+}
+
+/* Scroll reveal animation */
+.reveal {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: 1s ease;
+}
+
+.reveal.active { opacity: 1; transform: translateY(0); }
+
+@media (max-width: 768px) {
+    nav { display: flex; flex-direction: column; gap: 10px; }
+    .hero { padding: 40px 20px; }
+}
